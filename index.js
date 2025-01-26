@@ -5,28 +5,7 @@ const cors = require('cors')
 const Note = require('./models/note')
 
 
-let notes = [
-  {
-    id: "1",
-    content: "HTML is easy",
-    important: true
-  },
-  {
-    id: "2",
-    content: "Browser can execute only JavaScript",
-    important: false
-  },
-  {
-    id: "3",
-    content: "GET and POST are the most important methods of HTTP protocol",
-    important: true
-  },
-  {
-    id: "3",
-    content: "Does it work?",
-    important: true
-  }
-]
+let notes = []
 
 const requestLogger = (request, response, next) => {
   console.log('Method:', request.method)
